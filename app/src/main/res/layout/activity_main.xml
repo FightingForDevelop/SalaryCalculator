@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.xiaoxiao.salarycalculator.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/base10dp"
+        android:layout_marginTop="@dimen/base10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:padding="@dimen/base8dp"
+            android:text="请输入基本工资"
+            android:textSize="@dimen/base20dp"
+            />
+
+        <EditText
+            android:id="@+id/et_basic"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:inputType="number"
+            android:text="0.0"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/base8dp"
+            android:text="元"
+            android:textSize="@dimen/base20dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/base10dp"
+        android:layout_marginTop="@dimen/base10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:padding="@dimen/base8dp"
+            android:text="请输入五险一金"
+            android:textSize="@dimen/base20dp"
+            />
+
+        <EditText
+            android:id="@+id/et_insure"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:inputType="number"
+            android:text="0.0"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/base8dp"
+            android:text="元"
+            android:textSize="@dimen/base20dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/base10dp"
+        android:layout_marginTop="@dimen/base10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:padding="@dimen/base8dp"
+            android:text="请输入缺勤天数"
+            android:textSize="@dimen/base20dp"
+            />
+
+        <EditText
+            android:id="@+id/et_absence"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:inputType="number"
+            android:text="0"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/base8dp"
+            android:text="天"
+            android:textSize="@dimen/base20dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/base10dp"
+        android:layout_marginTop="@dimen/base10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:padding="@dimen/base8dp"
+            android:text="请输入加班天数"
+            android:textSize="@dimen/base20dp"
+            />
+
+        <EditText
+            android:id="@+id/et_overtime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:inputType="number"
+            android:text="0"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/base8dp"
+            android:text="天"
+            android:textSize="@dimen/base20dp"
+            />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="@dimen/base200dp"
+        android:layout_height="@dimen/base60dp"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/base20dp"
+        android:onClick="calculator"
+        android:text="计算"
+        android:textSize="@dimen/base20dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/base6dp"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/base8dp"
+            android:text="个人所得税"
+            android:textSize="@dimen/base20dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_allRate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/base8dp"
+            android:text="0.00"
+            android:textSize="@dimen/base20dp"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/base8dp"
+            android:text="元"
+            android:textSize="@dimen/base20dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="@dimen/base6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/base8dp"
+            android:text="最终应得"
+            android:textSize="@dimen/base20dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_finalSalary"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/base8dp"
+            android:text="0.00"
+            android:textSize="@dimen/base20dp"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/base8dp"
+            android:text="元"
+            android:textSize="@dimen/base20dp"
+            />
+    </LinearLayout>
+</LinearLayout>
